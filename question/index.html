@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para mi Amuuuur 💕</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<!-- Pantalla 1 -->
+<div class="container" id="pantalla1">
+  <div class="message">
+    <h1>amuuuur jsjs 💕</h1>
+    <h2>soy yo Jose por cierto</h2>
+    <p>te amo así muchíííísimo 💖</p>
+  </div>
+  <button onclick="siguiente(2)">apreta aquí para continuar →</button>
+</div>
+
+<!-- Pantalla 2 -->
+<div class="container hidden" id="pantalla2">
+  <div class="message">
+    <h1>hola cariño jsjs ✨</h1>
+    <p>¿qué hacei? por cierto estás muy preciosa sabes 💕</p>
+    <p class="mini">
+      esta página fue creada única y exclusivamente para ti mi amor 🫶
+    </p>
+  </div>
+  <button onclick="siguiente(3)">continuar →</button>
+</div>
+
+<!-- Pantalla 3 -->
+<div class="container hidden" id="pantalla3">
+  <img src="https://i.postimg.cc/RZfBdQk8/IMG-20260208-WA0090.jpg" class="foto">
+
+  <div class="message">
+    <h2>cariñooo aquí estoy por ti 💗</h2>
+    <p>gracias por hacerme demasiado feliz.</p>
+    <p>mi vida no sería igual sin ti.</p>
+    <p>eres mi hogar, mi calma y mi felicidad.</p>
+    <p class="destacado">mañana es san valentín...</p>
+  </div>
+
+  <h3>¿quieres ver la pregunta? 😏</h3>
+  <button onclick="siguiente(4)">claro</button>
+</div>
+
+<!-- Pantalla 4 -->
+<div class="container hidden" id="pantalla4">
+  <div class="message">
+    <h1 class="pregunta">¿quieres ser mi san valentín? 💘</h1>
+    <p>no acepto un no por respuesta 😌</p>
+  </div>
+
+  <button id="btnSi" onclick="acepto()">SÍIIII 💕</button>
+  <button id="btnNo" onclick="rechazo()">Na</button>
+</div>
+
+<!-- Pantalla 5 -->
+<div class="container hidden" id="pantalla5">
+  <div class="message">
+    <h1>gracias por aceptarme 🥺💖</h1>
+    <div class="poema">
+      <p>Eres la mujer más hermosa del universo.</p>
+      <p>Eres mi felicidad diaria.</p>
+      <p>Quiero caminar contigo siempre.</p>
+      <p class="destacado">Falta poco para que seas mi prometida 💍</p>
+    </div>
+    <button onclick="siguiente(6)">continuar →</button>
+  </div>
+</div>
+
+<!-- Pantalla 6 (nuevo poema) -->
+<div class="container hidden" id="pantalla6">
+  <div class="message">
+    <h1>Un pequeño poema para ti 💌</h1>
+    <div class="poema">
+      <p>En tus ojos veo mi hogar 🌟</p>
+      <p>En tu risa encuentro mi alegría 😂💖</p>
+      <p>En tu abrazo siento paz 🫂</p>
+      <p>Y en tu amor, mi eternidad 💕✨</p>
+    </div>
+    <button onclick="siguiente(7)">seguir →</button>
+  </div>
+</div>
+
+<!-- Pantalla 7 (mensaje largo con emoticonos) -->
+<div class="container hidden" id="pantalla7">
+  <div class="final-heart">💖</div>
+  <div class="message">
+    <p>cariñooo aquí estoy por ti jsjsjs 😘💗, oye bb quiero decirte algo 🫶: gracias por hacerme demasiado feliz 😍 y por acompañarme en las buenas y en las malas ❤️‍🔥💪, amor mio 💖. sinceramente mi vida no sería tan perfecta como lo es ahora mismo sin ti 😌✨, eres una fuente muy importante de felicidad para mi 💕🌸. no espero el día donde tú seas oficialmente parte de mi familia 👰🤵 y yo de la tuya mediante el matrimonio 💍💖, jsjsjs. supongo que ya sabes que mañana es san valentín 💘 y quiero decirte que te amo muuuuuucho 😍🥰💖💞</p>
+  </div>
+  <div class="creditos">
+    Hecho con mucho amor por tu Jose ❤️
+  </div>
+
+  <audio id="musica" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
